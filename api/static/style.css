@@ -2,7 +2,7 @@
     --primaria-slight:#e1e9ff;
     --branco-gelo:#f1f1f1;
     --azul-dark:#002244;
-    --faded:#30303030;
+    --faded:#303030DD;
 }
 html {
     height: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -16,25 +16,26 @@ body{
 .nav{
     z-index: 10;
     position: absolute;
-    margin: 10px;padding: 0px;
+    margin: 00px;padding: 10px;
     background-color: var(--branco-gelo); 
     width: -webkit-fill-available;
 }
 
 .modal{
-    margin: 0px;padding: 0px;
+    margin: 0px;padding: 10px;
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     z-index: -1;
-    height: calc(100vh - 20px);
-    width: calc(100vw - 20px);
+    height: 100vh;
+    width: 100vw;
     text-align-last: center;
     background-color: var(--faded);
 }
 
 .modalImg{
     height: calc(100vh - 20px);
+    border-radius: 2vw;
 }
 
 .thumb{
@@ -55,5 +56,3 @@ section{
     margin: 10px;
     padding: 5px;
 }
-
-.now{}
