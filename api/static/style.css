@@ -1,22 +1,24 @@
 :root {
-    --primaria-slight:#e1e9ff; --branco-gelo:#f1f1f1; --azul-dark:#002244
+    --primaria-slight:#e1e9ff;
+    --branco-gelo:#f1f1f1;
+    --azul-dark:#002244;
+    --faded:#30303030;
 }
 html {
     height: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
-    position: absolute;
     margin: 0px;padding: 0px;
     background-color: white
 }
 
 .nav{
     z-index: 10;
-    position: relative;
+    position: absolute;
     margin: 10px;padding: 0px;
     background-color: var(--branco-gelo); 
-    height: 100vh;
+    width: -webkit-fill-available;
 }
 
 .modal{
@@ -28,6 +30,7 @@ body{
     height: calc(100vh - 20px);
     width: calc(100vw - 20px);
     text-align-last: center;
+    background-color: var(--faded);
 }
 
 .modalImg{
@@ -52,3 +55,5 @@ section{
     margin: 10px;
     padding: 5px;
 }
+
+.now{}
