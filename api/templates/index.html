@@ -8,17 +8,28 @@
     <script src="{{url_for('static',filename='script.js')}}"></script>
 </head>
 <body>
-    <section>
-        <div>
-            texto texto texto
-        </div>
-        <div>
-            <img src="{{url_for('static',filename='img/github_00.png')}}" alt="" onclick="engorgio(this)" id="github_00.png">
-        </div>
-    </section>
+    <div class="nav">
+        <section>
+            <div class="text">
+                texto texto texto 1
+            </div>
+            <div class="img">
+                <img src="{{url_for('static',filename='img/github_00.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+            </div>
+        </section>
 
-    <div id="modal" style="z-index: 0;">
-        <img src="{{url_for('static',filename='img/github_00.png')}}" alt="" id="modalImg">
+        <section>
+            <div class="text">
+                texto texto texto 2
+            </div>
+            <div class="img">
+                <img src="{{url_for('static',filename='img/github_01.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+            </div>
+        </section>
+    </div>
+
+    <div id="modal" class="modal" onclick="reducio(this)">
+        <img src="{{url_for('static',filename='img/github_00.png')}}" alt="" id="modalImg" class="modalImg">
     </div>
     
 </body>
