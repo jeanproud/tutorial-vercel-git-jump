@@ -3,6 +3,7 @@
     --branco-gelo:#f1f1f1;
     --azul-dark:#002244;
     --faded:#303030DD;
+    --clear:#30303000;
 }
 html {
     height: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,7 +23,8 @@ body{
 }
 
 .modal{
-    margin: 0px;padding: 10px;
+    transition: background-color 0.20s ease;
+    margin: 0px;padding: 0px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -31,22 +33,25 @@ body{
     width: 100vw;
     text-align-last: center;
     background-color: var(--faded);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.modalDiv{    
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: calc(100vh - 20px);
+.modal.collapsed{
+    background-color: var(--clear);
 }
 
+
 .modalImg{
-    transition:height 0.3s ease-out;
-    height: calc(100vh - 20px);
+    transition:height 0.25s ease-out;
     border-radius: 2vw;
-    flex: 1;
+    position: sticky;
+    top: calc(50vh - calc(100vh - 20px));
+    left: calc(50vw - calc(100vw - 20px));
+    height: calc(100vh - 20px);
 }
 .modalImg.collapsed {
-    flex: 0;
+    height: 0px;
 }
 
 .thumb{
