@@ -2,8 +2,8 @@
     --primaria-slight:#e1e9ff;
     --branco-gelo:#f1f1f1;
     --azul-dark:#002244;
-    --faded:#303030DD;
-    --clear:#30303000;
+    --modalFog:#303030DD;
+    --transparent:#0000;
 }
 html {
     height: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,13 +32,13 @@ body{
     height: 100vh;
     width: 100vw;
     text-align-last: center;
-    background-color: var(--faded);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--transparent);
 }
-.modal.collapsed{
-    background-color: var(--clear);
+.modal.visibility{
+    background-color: var(--modalFog);
 }
 
 
@@ -48,10 +48,10 @@ body{
     position: sticky;
     top: calc(50vh - calc(100vh - 20px));
     left: calc(50vw - calc(100vw - 20px));
-    height: calc(100vh - 20px);
-}
-.modalImg.collapsed {
     height: 0px;
+}
+.modalImg.visibility {
+    height: calc(100vh - 20px);
 }
 
 .thumb{
