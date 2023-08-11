@@ -32,12 +32,21 @@ body{
     text-align-last: center;
     background-color: var(--faded);
 }
+.modalDiv{    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: calc(100vh - 20px);
+}
 
 .modalImg{
-    overflow:hidden;
     transition:height 0.3s ease-out;
     height: calc(100vh - 20px);
     border-radius: 2vw;
+    flex: 1;
+}
+.modalImg.collapsed {
+    flex: 0;
 }
 
 .thumb{
