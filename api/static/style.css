@@ -14,6 +14,13 @@ body{
     background-color: white
 }
 
+.hasGit{
+    text-align: center;
+    font-weight: 500;
+    border-bottom: solid 1px #ffc014;
+    padding-bottom: 10px;
+}
+
 .nav{
     z-index: 10;
     position: absolute;
@@ -71,4 +78,31 @@ section{
 .img{
     margin: 10px;
     padding: 5px;
+}
+
+.JumpButton {
+	box-shadow:inset 0px 1px 0px 0px #ff9224;
+	background-color:#ff9224;
+	border-radius:6px;
+	border:1px solid #ffc014;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+}
+.JumpButton:hover {
+	background-color:#ffc014;
+	box-shadow:inset 0px 1px 0px 0px #ff9224;
+	border:1px solid #ff9224;
+}
+.JumpButton:active {
+	position:relative;
+	top:1px;
+}
+
+.justify{
+    justify-content: space-around;
 }

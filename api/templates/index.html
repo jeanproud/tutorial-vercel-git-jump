@@ -9,59 +9,199 @@
 </head>
 <body>
     <div class="nav">
-        <section>
-            <div class="text">
-                Entre no site do <a href="https://github.com/">Github</a> e inicie o processo de criação de conta.
-            </div>
-            <div class="img">
-                <img src="{{url_for('static',filename='img/github_00.png')}}" alt="" onclick="engorgio(this)" class="thumb">
-            </div>
-        </section>
-
-        <section>
-            <div class="text">
-                Selecione a opção de criar uma nova conta
-            </div>
-            <div class="img">
-                <img src="{{url_for('static',filename='img/github_01.png')}}" alt="" onclick="engorgio(this)" class="thumb">
-            </div>
-        </section>
-
-        <section>
-            <div class="text">
-                Entre com Email, senha e Nome da conta
-            </div>
-            <div class="img">
-                <img src="{{url_for('static',filename='img/github_02.png')}}" alt="" onclick="engorgio(this)" class="thumb">
-            </div>
-        </section>
-
-        <section>
-            <div class="text">
-                Preecha o codigo recebido no seu Email.
-            </div>
-            <div class="img">
-                <img src="{{url_for('static',filename='img/github_03.png')}}" alt="" onclick="engorgio(this)" class="thumb">
-            </div>
-        </section>
-
-        <section>
-            <div class="text">
-                Você pode ignorar o preenchimento de personalização de conta!
-            </div>
-            <div class="img">
-                <img src="{{url_for('static',filename='img/github_04.png')}}" alt="" onclick="engorgio(this)" class="thumb">
-            </div>
-        </section>
-
-        <section>
-            <div class="text">
-                Caso queira você tambem pode instalar o Github Desktop para utilizar os serviços do git atraves do aplicativo!
-            </div>
-            <div class="img">
-                <img src="{{url_for('static',filename='img/github_05.png')}}" alt="" onclick="engorgio(this)" class="thumb">
-            </div>
-        </section>
+        <h2 class="hasGit">Tem conta GitHub?            
+            <section class="justify">
+                <div class="JumpButton" onclick="hideGit()">Tenho conta GitHub!</div>
+                <div class="JumpButton" onclick="showGit()">Não tenho Conta GitHub!</div>            
+            </section>
+        </h2>
+        <div id="git">
+            <section>
+                <div class="text">
+                    Entre no site do <a href="https://github.com/">Github</a> e inicie o processo de criação de conta.
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/github_00.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+    
+            <section>
+                <div class="text">
+                    Selecione a opção de criar uma nova conta
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/github_01.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+    
+            <section>
+                <div class="text">
+                    Entre com Email, senha e Nome da conta
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/github_02.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+    
+            <section>
+                <div class="text">
+                    Preencha o código recebido no seu Email.
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/github_03.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+    
+            <section>
+                <div class="text">
+                    Você pode ignorar o preenchimento de personalização de conta!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/github_04.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+    
+            <section>
+                <div class="text">
+                    Caso queira você também pode instalar o Github Desktop para utilizar os serviços do git através do aplicativo!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/github_05.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+        </div>
+        <div id="vercel">
+            <section>
+                <div class="text">
+                    Entre no site do <a href="https://vercel.com/">Vercel</a> e inicie o processo de criação de conta.
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_00.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Para o tipo de conta podemos escolher Hobby pois o intuito inicial e estudo!
+                    Preencha também o nome de usuário!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_01.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Agora escolha o provedor do serviço de repositório, para o nosso caso utilizaremos o GitHub!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_02.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Caso sua conta do GitHub ja esteja logada sera aberta uma janela pedindo para autorizar o link da conta do Vercel com a do GitHub
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_03.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Preencha o numero de telefone para receber um código de ativação, e ative a conta com o código recebido!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_04.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Agora sera necessário adicionar o aplicativo do vercel ao GitHub!<br>
+                    Clique na caixa de seleção para adicionar a conta GitHub a lista!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_05.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Sera aberto uma janela do GitHub para instalarmos o app do Vercel no GitHub!<br>
+                    Nessa janela caso a conta GitHub tenha repositórios ativos, poderemos escolher a que repositórios o Vercel tera acesso!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_06.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Apos a aprovação sua conta GitHub aparecera na lista!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_07.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Para continuar utilizaremos um template fornecido pelo Vercel!<br>
+                    Esse template tera todas as configurações necessárias para o funcionamento da esteira de Deploy de repositório!<br>
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_08.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Aqui poderemos escolher um template filtrando pela linguagem ou caso de uso!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_09.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Apos confirmar visualmente o template escolhido faremos o deploy do estado inicial da aplicação!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_10.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Aqui podemos escolher o nome que daremos ao repositório que o Vercel criara em nossa conta GitHub!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_11.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    O Vercel fara a configuração inicial criando o repositório, subindo o código fonte do template escolhido e fazendo o deploy da aplicação em ambiente exposta a Internet!<br>
+                    Apos levantar todos os recursos receberemos uma tela apresentando uma print da pagina inicial da aplicação e poderemos seguir para o dashboard!
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_12.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+            
+            <section>
+                <div class="text">
+                    Na tela de dashboard poderemos ver o Status do deploy, quem foi o ultimo usuário a atualizar o código fonte no GitHub, a Branch utilizada; e os links para o repositório e para a aplicação.
+                </div>
+                <div class="img">
+                    <img src="{{url_for('static',filename='img/vercel_13.png')}}" alt="" onclick="engorgio(this)" class="thumb">
+                </div>
+            </section>
+        </div>
     </div>
 
     <div id="modal" class="modal" onclick="reducio(this)">

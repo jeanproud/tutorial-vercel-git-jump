@@ -17,3 +17,13 @@ function reducio(el){
     toggleModal(el, modalImg)
     setTimeout(() => { el.style.zIndex=0; }, 250);
 }
+
+function showGit(){   
+    gitContent = document.getElementById("git") 
+    gitContent.style.display="block"
+}
+
+function hideGit(){   
+    gitContent = document.getElementById("git") 
+    gitContent.style.display="none"
+}
